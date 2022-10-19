@@ -1,9 +1,10 @@
 /**
-* @file arm.hpp
-* @brief The arm interface and dervied arm2D class
-* @author Chang-Hong Chen <longhongc@gmail.com>
-* @date 2022-10-18
-*
+ * @file arm.hpp
+ * @brief The arm interface and dervied arm2D class
+ * @author Chang-Hong Chen <longhongc@gmail.com>
+ * @date 2022-10-18
+ * @copyright 2022 longhongc@gmail.com sparshjaiswal97@gmail.com 
+ *
 */
 
 #pragma once
@@ -18,21 +19,21 @@ using joint_states_vec = std::vector<std::vector<double>>;
  * @Brief  The arm interface for 2D and 3D arm
  */
 class Arm {
-  public:
+ public:
     /**
      * @Brief  Constructor
      *
      * @Param dof: Degree of freedom
      * @Param link_length: Length of all links
      */
-    Arm(int dof, std::vector<double> link_length):
+    Arm(int dof, const std::vector<double>& link_length):
       dof_{dof},
       link_length_{link_length},
-      joint_states_(dof, 0.0) {};
+      joint_states_(dof, 0.0) {}
     /**
      * @Brief  Default constructor
      */
-    Arm(): Arm(2, {1, 1}) {};
+    Arm(): Arm(2, {1, 1}) {}
     /**
      * @Brief  Destructor
      */
@@ -58,7 +59,7 @@ class Arm {
      *
      * @Returns The end-effector pose (coordinate and orientation)
      */
-    virtual std::vector<double> FK(std::vector<double> joint_states) = 0;
+    virtual std::vector<double> FK(const std::vector<double>& joint_states) = 0;
     /**
      * @Brief  Inverse kinematic
      *
@@ -67,9 +68,9 @@ class Arm {
      *
      * @Returns A vector of joint_states (IK can have multiple solutions or none)
      */
-    virtual joint_states_vec IK(std::vector<double> eef_pose) = 0;
+    virtual joint_states_vec IK(const std::vector<double>& eef_pose) = 0;
 
-  protected:
+ protected:
     /**
      * @Brief Degree of freedom
      */
@@ -89,24 +90,24 @@ class Arm {
  * @Brief  A 2D planar arm class
  */
 class Arm2D: private Arm {
-  public:
+ public:
     /**
      * @Brief Constructor
      *
      * @Param dof: Degree of freedom
      * @Param link_length: Length of all links
      */
-    Arm2D(int dof, std::vector<double> link_length):
+    Arm2D(int dof, const std::vector<double>& link_length):
       Arm(dof, link_length),
       eef_pose_(3, 0.0) {
-        eef_pose_ = FK(joint_states_);
-      };
+        eef_pose_ = Arm2D::FK(joint_states_);
+      }
 
     /**
      * @Brief  Default constructor
      *
      */
-    Arm2D(): Arm() {};
+    Arm2D(): Arm() {}
 
     /**
      * @Brief  Destructor
@@ -117,7 +118,7 @@ class Arm2D: private Arm {
      * @Brief  Remove copy constructor
      *
      */
-    Arm2D(const Arm&) = delete;
+    explicit Arm2D(const Arm&) = delete;
     /**
      * @Brief  Remove assignment constructor
      *
@@ -132,7 +133,7 @@ class Arm2D: private Arm {
      *
      * @Returns The end-effector pose (coordinate and orientation)
      */
-    std::vector<double> FK(std::vector<double> joint_states) override;
+    std::vector<double> FK(const std::vector<double>& joint_states) override;
     /**
      * @Brief  Inverse kinematic
      *
@@ -142,9 +143,9 @@ class Arm2D: private Arm {
      * @Returns A vector of joint_states (IK can have multiple solutions or none)
      */
 
-    joint_states_vec IK(std::vector<double> eef_pose) override;
+    joint_states_vec IK(const std::vector<double>& eef_pose) override;
 
-  private:
+ private:
     /**
      * @Brief The end-effector pose (coordinate and orientation)
      *        A 2D planar arm end-effector pose has x, y, and theta
