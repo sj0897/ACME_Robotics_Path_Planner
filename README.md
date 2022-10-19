@@ -1,3 +1,6 @@
+[![Build Status](https://github.com/sj0897/ACME_Robotics_Path_Planner/actions/workflows/build_and_coveralls.yml/badge.svg)](https://github.com/sj0897/ACME_Robotics_Path_Planner/actions/workflows/build_and_coveralls.yml)
+[![Coverage Status](https://coveralls.io/repos/github/sj0897/ACME_Robotics_Path_Planner/badge.svg?branch=master)](https://coveralls.io/github/sj0897/ACME_Robotics_Path_Planner?branch=master)
+
 # ACME Robotics Path Planner
 This project is to design a path planner for various kind of robotics arm.  
 A path planner can allow the robotics arm to move from one state to another and avoid collision through the trajectory. 
