@@ -1,0 +1,4 @@
+<map id="include/arm.hpp" name="include/arm.hpp">
+<area shape="rect" id="node1" title="The arm interface and dervied arm2D class." alt="" coords="35,5,162,32"/>
+<area shape="rect" id="node2" href="$path__planner_8hpp.html" title="The path planner class that plans a collistion&#45;free trajectory from start to goal." alt="" coords="5,80,192,107"/>
+</map>

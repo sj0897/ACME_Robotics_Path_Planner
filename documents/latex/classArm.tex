@@ -1,0 +1,136 @@
+\hypertarget{classArm}{}\doxysection{Arm Class Reference}
+\label{classArm}\index{Arm@{Arm}}
+
+
+{\ttfamily \#include $<$arm.\+hpp$>$}
+
+
+
+Inheritance diagram for Arm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{classArm__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArm_aff85d2d34d7a8b411ef957a014280f85}{Arm}} (int dof, const std\+::vector$<$ double $>$ \&link\+\_\+length)
+\item 
+\mbox{\hyperlink{classArm_a920d0f828c6e76188827cf0c073963de}{Arm}} ()
+\item 
+virtual \mbox{\hyperlink{classArm_add73310fefc4e04773c594ff12af56de}{$\sim$\+Arm}} ()
+\item 
+\mbox{\hyperlink{classArm_ad84b44ed181bdbd215ffc7d38d33b8e3}{Arm}} (const \mbox{\hyperlink{classArm}{Arm}} \&)=delete
+\item 
+\mbox{\hyperlink{classArm}{Arm}} \& \mbox{\hyperlink{classArm_a22bab8dedba381db9d67aa590282b7a9}{operator=}} (const \mbox{\hyperlink{classArm}{Arm}} \&)=delete
+\item 
+virtual std\+::vector$<$ double $>$ \mbox{\hyperlink{classArm_a79b6ba7fb2d1fff74f8cba6921f79bdc}{FK}} (const std\+::vector$<$ double $>$ \&joint\+\_\+states)=0
+\item 
+virtual \mbox{\hyperlink{arm_8hpp_aec321b415994ef6402eab137567d1f51}{joint\+\_\+states\+\_\+vec}} \mbox{\hyperlink{classArm_a6f374256991845a8960c435723bbc5d0}{IK}} (const std\+::vector$<$ double $>$ \&eef\+\_\+pose)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classArm_afa004fa658cdf672c150fc39c675f35a}{dof\+\_\+}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classArm_aa5fd7abf9d11cd688abdd7dc5046259e}{link\+\_\+length\+\_\+}}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classArm_a593c2931f612c55352b53a4eaf280152}{joint\+\_\+states\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@\+Brief The arm interface for 2D and 3D arm 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArm_aff85d2d34d7a8b411ef957a014280f85}\label{classArm_aff85d2d34d7a8b411ef957a014280f85}} 
+\index{Arm@{Arm}!Arm@{Arm}}
+\index{Arm@{Arm}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{Arm()}{Arm()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Arm\+::\+Arm (\begin{DoxyParamCaption}\item[{int}]{dof,  }\item[{const std\+::vector$<$ double $>$ \&}]{link\+\_\+length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@\+Brief Constructor
+
+@\+Param dof\+: Degree of freedom @\+Param link\+\_\+length\+: Length of all links \mbox{\Hypertarget{classArm_a920d0f828c6e76188827cf0c073963de}\label{classArm_a920d0f828c6e76188827cf0c073963de}} 
+\index{Arm@{Arm}!Arm@{Arm}}
+\index{Arm@{Arm}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{Arm()}{Arm()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Arm\+::\+Arm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@\+Brief Default constructor \mbox{\Hypertarget{classArm_add73310fefc4e04773c594ff12af56de}\label{classArm_add73310fefc4e04773c594ff12af56de}} 
+\index{Arm@{Arm}!````~Arm@{$\sim$Arm}}
+\index{````~Arm@{$\sim$Arm}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{$\sim$Arm()}{~Arm()}}
+{\footnotesize\ttfamily virtual Arm\+::$\sim$\+Arm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+@\+Brief Destructor \mbox{\Hypertarget{classArm_ad84b44ed181bdbd215ffc7d38d33b8e3}\label{classArm_ad84b44ed181bdbd215ffc7d38d33b8e3}} 
+\index{Arm@{Arm}!Arm@{Arm}}
+\index{Arm@{Arm}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{Arm()}{Arm()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Arm\+::\+Arm (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classArm}{Arm}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+@\+Brief Remove copy constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArm_a79b6ba7fb2d1fff74f8cba6921f79bdc}\label{classArm_a79b6ba7fb2d1fff74f8cba6921f79bdc}} 
+\index{Arm@{Arm}!FK@{FK}}
+\index{FK@{FK}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{FK()}{FK()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$double$>$ Arm\+::\+FK (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{joint\+\_\+states }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+@\+Brief Forward kinematic
+
+@\+Param joint\+\_\+states\+: The angle values of all joints starting from the base link to the end-\/effector
+
+@\+Returns The end-\/effector pose (coordinate and orientation) 
+
+Implemented in \mbox{\hyperlink{classArm2D_adeeceba34c3a12eaaa6850d2906d9509}{Arm2D}}.
+
+\mbox{\Hypertarget{classArm_a6f374256991845a8960c435723bbc5d0}\label{classArm_a6f374256991845a8960c435723bbc5d0}} 
+\index{Arm@{Arm}!IK@{IK}}
+\index{IK@{IK}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{IK()}{IK()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{arm_8hpp_aec321b415994ef6402eab137567d1f51}{joint\+\_\+states\+\_\+vec}} Arm\+::\+IK (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{eef\+\_\+pose }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+@\+Brief Inverse kinematic
+
+@\+Param eef\+\_\+pose\+: The pose of the end-\/effector, including cartesian coordinate and orientation
+
+@\+Returns A vector of joint\+\_\+states (IK can have multiple solutions or none) 
+
+Implemented in \mbox{\hyperlink{classArm2D_a9906ee83ea714e1ed14cd0644dd36414}{Arm2D}}.
+
+\mbox{\Hypertarget{classArm_a22bab8dedba381db9d67aa590282b7a9}\label{classArm_a22bab8dedba381db9d67aa590282b7a9}} 
+\index{Arm@{Arm}!operator=@{operator=}}
+\index{operator=@{operator=}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArm}{Arm}}\& Arm\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classArm}{Arm}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+@\+Brief Remove assignment constructor 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classArm_afa004fa658cdf672c150fc39c675f35a}\label{classArm_afa004fa658cdf672c150fc39c675f35a}} 
+\index{Arm@{Arm}!dof\_@{dof\_}}
+\index{dof\_@{dof\_}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{dof\_}{dof\_}}
+{\footnotesize\ttfamily int Arm\+::dof\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+@\+Brief Degree of freedom \mbox{\Hypertarget{classArm_a593c2931f612c55352b53a4eaf280152}\label{classArm_a593c2931f612c55352b53a4eaf280152}} 
+\index{Arm@{Arm}!joint\_states\_@{joint\_states\_}}
+\index{joint\_states\_@{joint\_states\_}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{joint\_states\_}{joint\_states\_}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Arm\+::joint\+\_\+states\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+@\+Brief The angle values of all joints starting from the base link to the end-\/effector \mbox{\Hypertarget{classArm_aa5fd7abf9d11cd688abdd7dc5046259e}\label{classArm_aa5fd7abf9d11cd688abdd7dc5046259e}} 
+\index{Arm@{Arm}!link\_length\_@{link\_length\_}}
+\index{link\_length\_@{link\_length\_}!Arm@{Arm}}
+\doxysubsubsection{\texorpdfstring{link\_length\_}{link\_length\_}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Arm\+::link\+\_\+length\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+@\+Brief Length of all links 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{arm_8hpp}{arm.\+hpp}}\end{DoxyCompactItemize}
