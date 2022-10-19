@@ -1,0 +1,71 @@
+\hypertarget{classPathPlanner}{}\doxysection{Path\+Planner Class Reference}
+\label{classPathPlanner}\index{PathPlanner@{PathPlanner}}
+
+
+{\ttfamily \#include $<$path\+\_\+planner.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPathPlanner_a286a68358073cb7e215992fdca2aceb8}{Path\+Planner}} (\mbox{\hyperlink{classArm}{Arm}} $\ast$arm, const std\+::vector$<$ double $>$ \&start, const std\+::vector$<$ double $>$ \&goal)
+\item 
+bool \mbox{\hyperlink{classPathPlanner_aa91a6efd6be39673124b487b9cfd0d97}{is\+\_\+obstacle}} (const std\+::vector$<$ double $>$ \&state)
+\item 
+\mbox{\hyperlink{arm_8hpp_aec321b415994ef6402eab137567d1f51}{joint\+\_\+states\+\_\+vec}} \mbox{\hyperlink{classPathPlanner_a47742075f2c45bd862951139d4c293f9}{plan}} ()
+\item 
+void \mbox{\hyperlink{classPathPlanner_a62f903ad333b590cb9825e192424fdc6}{a\+\_\+star}} ()
+\item 
+void \mbox{\hyperlink{classPathPlanner_a3a9b6d1872bdcc2ae6d1c5648f50ab65}{rrt}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@\+Brief The path planner class calculates a collision-\/free path for the given manipulator to move from start state to the goal state 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPathPlanner_a286a68358073cb7e215992fdca2aceb8}\label{classPathPlanner_a286a68358073cb7e215992fdca2aceb8}} 
+\index{PathPlanner@{PathPlanner}!PathPlanner@{PathPlanner}}
+\index{PathPlanner@{PathPlanner}!PathPlanner@{PathPlanner}}
+\doxysubsubsection{\texorpdfstring{PathPlanner()}{PathPlanner()}}
+{\footnotesize\ttfamily Path\+Planner\+::\+Path\+Planner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArm}{Arm}} $\ast$}]{arm,  }\item[{const std\+::vector$<$ double $>$ \&}]{start,  }\item[{const std\+::vector$<$ double $>$ \&}]{goal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@\+Brief Constructor
+
+@\+Param arm\+: The target manipulator @\+Param start\+: A start joints state @\+Param goal\+: A goal joints state 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPathPlanner_a62f903ad333b590cb9825e192424fdc6}\label{classPathPlanner_a62f903ad333b590cb9825e192424fdc6}} 
+\index{PathPlanner@{PathPlanner}!a\_star@{a\_star}}
+\index{a\_star@{a\_star}!PathPlanner@{PathPlanner}}
+\doxysubsubsection{\texorpdfstring{a\_star()}{a\_star()}}
+{\footnotesize\ttfamily void Path\+Planner\+::a\+\_\+star (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@\+Brief A-\/\+Star algorithm for path finding \mbox{\Hypertarget{classPathPlanner_aa91a6efd6be39673124b487b9cfd0d97}\label{classPathPlanner_aa91a6efd6be39673124b487b9cfd0d97}} 
+\index{PathPlanner@{PathPlanner}!is\_obstacle@{is\_obstacle}}
+\index{is\_obstacle@{is\_obstacle}!PathPlanner@{PathPlanner}}
+\doxysubsubsection{\texorpdfstring{is\_obstacle()}{is\_obstacle()}}
+{\footnotesize\ttfamily bool Path\+Planner\+::is\+\_\+obstacle (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{state }\end{DoxyParamCaption})}
+
+@\+Brief Check if the joints state is within obstacles
+
+@\+Param state\+: A joints state
+
+@\+Returns Is collide or not \mbox{\Hypertarget{classPathPlanner_a47742075f2c45bd862951139d4c293f9}\label{classPathPlanner_a47742075f2c45bd862951139d4c293f9}} 
+\index{PathPlanner@{PathPlanner}!plan@{plan}}
+\index{plan@{plan}!PathPlanner@{PathPlanner}}
+\doxysubsubsection{\texorpdfstring{plan()}{plan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm_8hpp_aec321b415994ef6402eab137567d1f51}{joint\+\_\+states\+\_\+vec}} Path\+Planner\+::plan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@\+Brief Plan a collision-\/free path from start to goal
+
+@\+Returns A collision free path if exisit \mbox{\Hypertarget{classPathPlanner_a3a9b6d1872bdcc2ae6d1c5648f50ab65}\label{classPathPlanner_a3a9b6d1872bdcc2ae6d1c5648f50ab65}} 
+\index{PathPlanner@{PathPlanner}!rrt@{rrt}}
+\index{rrt@{rrt}!PathPlanner@{PathPlanner}}
+\doxysubsubsection{\texorpdfstring{rrt()}{rrt()}}
+{\footnotesize\ttfamily void Path\+Planner\+::rrt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+@\+Brief R\+RT algorithm for path finding 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{path__planner_8hpp}{path\+\_\+planner.\+hpp}}\end{DoxyCompactItemize}

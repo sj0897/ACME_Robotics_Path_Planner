@@ -1,0 +1,115 @@
+\hypertarget{classArm2D}{}\doxysection{Arm2D Class Reference}
+\label{classArm2D}\index{Arm2D@{Arm2D}}
+
+
+{\ttfamily \#include $<$arm.\+hpp$>$}
+
+
+
+Inheritance diagram for Arm2D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{classArm2D__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Arm2D\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{classArm2D__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classArm2D_aada3e9bba46d664e725e3bf94d7f009a}{Arm2D}} (int dof, const std\+::vector$<$ double $>$ \&link\+\_\+length)
+\item 
+\mbox{\hyperlink{classArm2D_a0a0f97832c4de9ab88d3bdfc68e2905a}{Arm2D}} ()
+\item 
+virtual \mbox{\hyperlink{classArm2D_a69f9e6a11c7b4c608e827886122292f0}{$\sim$\+Arm2D}} ()
+\item 
+\mbox{\hyperlink{classArm2D_a10b4de9f21cc2a04f17053670b7a0240}{Arm2D}} (const \mbox{\hyperlink{classArm}{Arm}} \&)=delete
+\item 
+\mbox{\hyperlink{classArm2D}{Arm2D}} \& \mbox{\hyperlink{classArm2D_a9d3bdfa4b0544f8ab1374c72e1254ad8}{operator=}} (const \mbox{\hyperlink{classArm}{Arm}} \&)=delete
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classArm2D_adeeceba34c3a12eaaa6850d2906d9509}{FK}} (const std\+::vector$<$ double $>$ \&joint\+\_\+states) override
+\item 
+\mbox{\hyperlink{arm_8hpp_aec321b415994ef6402eab137567d1f51}{joint\+\_\+states\+\_\+vec}} \mbox{\hyperlink{classArm2D_a9906ee83ea714e1ed14cd0644dd36414}{IK}} (const std\+::vector$<$ double $>$ \&eef\+\_\+pose) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+@\+Brief A 2D planar arm class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArm2D_aada3e9bba46d664e725e3bf94d7f009a}\label{classArm2D_aada3e9bba46d664e725e3bf94d7f009a}} 
+\index{Arm2D@{Arm2D}!Arm2D@{Arm2D}}
+\index{Arm2D@{Arm2D}!Arm2D@{Arm2D}}
+\doxysubsubsection{\texorpdfstring{Arm2D()}{Arm2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Arm2\+D\+::\+Arm2D (\begin{DoxyParamCaption}\item[{int}]{dof,  }\item[{const std\+::vector$<$ double $>$ \&}]{link\+\_\+length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@\+Brief Constructor
+
+@\+Param dof\+: Degree of freedom @\+Param link\+\_\+length\+: Length of all links \mbox{\Hypertarget{classArm2D_a0a0f97832c4de9ab88d3bdfc68e2905a}\label{classArm2D_a0a0f97832c4de9ab88d3bdfc68e2905a}} 
+\index{Arm2D@{Arm2D}!Arm2D@{Arm2D}}
+\index{Arm2D@{Arm2D}!Arm2D@{Arm2D}}
+\doxysubsubsection{\texorpdfstring{Arm2D()}{Arm2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Arm2\+D\+::\+Arm2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+@\+Brief Default constructor \mbox{\Hypertarget{classArm2D_a69f9e6a11c7b4c608e827886122292f0}\label{classArm2D_a69f9e6a11c7b4c608e827886122292f0}} 
+\index{Arm2D@{Arm2D}!````~Arm2D@{$\sim$Arm2D}}
+\index{````~Arm2D@{$\sim$Arm2D}!Arm2D@{Arm2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Arm2D()}{~Arm2D()}}
+{\footnotesize\ttfamily virtual Arm2\+D\+::$\sim$\+Arm2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+@\+Brief Destructor \mbox{\Hypertarget{classArm2D_a10b4de9f21cc2a04f17053670b7a0240}\label{classArm2D_a10b4de9f21cc2a04f17053670b7a0240}} 
+\index{Arm2D@{Arm2D}!Arm2D@{Arm2D}}
+\index{Arm2D@{Arm2D}!Arm2D@{Arm2D}}
+\doxysubsubsection{\texorpdfstring{Arm2D()}{Arm2D()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Arm2\+D\+::\+Arm2D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classArm}{Arm}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [delete]}}
+
+@\+Brief Remove copy constructor 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArm2D_adeeceba34c3a12eaaa6850d2906d9509}\label{classArm2D_adeeceba34c3a12eaaa6850d2906d9509}} 
+\index{Arm2D@{Arm2D}!FK@{FK}}
+\index{FK@{FK}!Arm2D@{Arm2D}}
+\doxysubsubsection{\texorpdfstring{FK()}{FK()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Arm2\+D\+::\+FK (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{joint\+\_\+states }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+@\+Brief Forward kinematic
+
+@\+Param joint\+\_\+states\+: The angle values of all joints starting from the base link to the end-\/effector
+
+@\+Returns The end-\/effector pose (coordinate and orientation) 
+
+Implements \mbox{\hyperlink{classArm_a79b6ba7fb2d1fff74f8cba6921f79bdc}{Arm}}.
+
+\mbox{\Hypertarget{classArm2D_a9906ee83ea714e1ed14cd0644dd36414}\label{classArm2D_a9906ee83ea714e1ed14cd0644dd36414}} 
+\index{Arm2D@{Arm2D}!IK@{IK}}
+\index{IK@{IK}!Arm2D@{Arm2D}}
+\doxysubsubsection{\texorpdfstring{IK()}{IK()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{arm_8hpp_aec321b415994ef6402eab137567d1f51}{joint\+\_\+states\+\_\+vec}} Arm2\+D\+::\+IK (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{eef\+\_\+pose }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+@\+Brief Inverse kinematic
+
+@\+Param eef\+\_\+pose\+: The pose of the end-\/effector, including cartesian coordinate and orientation
+
+@\+Returns A vector of joint\+\_\+states (IK can have multiple solutions or none) 
+
+Implements \mbox{\hyperlink{classArm_a6f374256991845a8960c435723bbc5d0}{Arm}}.
+
+\mbox{\Hypertarget{classArm2D_a9d3bdfa4b0544f8ab1374c72e1254ad8}\label{classArm2D_a9d3bdfa4b0544f8ab1374c72e1254ad8}} 
+\index{Arm2D@{Arm2D}!operator=@{operator=}}
+\index{operator=@{operator=}!Arm2D@{Arm2D}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArm2D}{Arm2D}}\& Arm2\+D\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classArm}{Arm}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+@\+Brief Remove assignment constructor 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{arm_8hpp}{arm.\+hpp}}\end{DoxyCompactItemize}
