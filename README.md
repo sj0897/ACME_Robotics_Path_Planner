@@ -1,5 +1,5 @@
 [![Build Status](https://github.com/sj0897/ACME_Robotics_Path_Planner/actions/workflows/build_and_coveralls.yml/badge.svg)](https://github.com/sj0897/ACME_Robotics_Path_Planner/actions/workflows/build_and_coveralls.yml)
-[![Coverage Status](https://coveralls.io/repos/github/sj0897/ACME_Robotics_Path_Planner/badge.svg?branch=master)](https://coveralls.io/github/sj0897/ACME_Robotics_Path_Planner?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/sj0897/ACME_Robotics_Path_Planner/badge.png?branch=master)](https://coveralls.io/github/sj0897/ACME_Robotics_Path_Planner?branch=master)
 
 # ACME Robotics Path Planner
 This project is to design a path planner for various kind of robotics arm.  
@@ -70,6 +70,8 @@ doxygen Doxyfile
 ```
 
 ## Links
+
+https://docs.google.com/spreadsheets/d/13U8-sXTIre1m_5L26LODDyiWqxcg9dg30RVNmKRkZ0Y/edit#gid=636711951
 
 
 
