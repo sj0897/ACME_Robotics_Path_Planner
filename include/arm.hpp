@@ -9,6 +9,7 @@
 
 #pragma once
 #include <vector>
+#include<cmath>
 
 /**
  * @Brief  A vector of joint_states
