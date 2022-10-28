@@ -90,7 +90,7 @@ class Arm {
 /**
  * @Brief  A 2D planar arm class
  */
-class Arm2D: private Arm {
+class Arm2D: public Arm {
  public:
     /**
      * @Brief Constructor
