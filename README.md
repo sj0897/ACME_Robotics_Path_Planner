@@ -1,3 +1,6 @@
+[![Build Status](https://github.com/sj0897/ACME_Robotics_Path_Planner/actions/workflows/build_and_coveralls.yml/badge.svg)](https://github.com/sj0897/ACME_Robotics_Path_Planner/actions/workflows/build_and_coveralls.yml)
+[![Coverage Status](https://coveralls.io/repos/github/sj0897/ACME_Robotics_Path_Planner/badge.png?branch=master)](https://coveralls.io/github/sj0897/ACME_Robotics_Path_Planner?branch=master)
+
 # ACME Robotics Path Planner
 This project is to design a path planner for various kind of robotics arm.  
 A path planner can allow the robotics arm to move from one state to another and avoid collision through the trajectory. 
@@ -45,7 +48,8 @@ https://www.youtube.com/watch?v=pWCyieuHHsQ
 #### Activity Diagram
 <img width="292" alt="image" src="https://user-images.githubusercontent.com/28807825/196823615-ef2368d8-55bd-4359-9561-c92042739156.png">
 
-
+#### Video
+https://youtu.be/x7Cnl6RYBdM
 </details>
 
 
@@ -67,6 +71,8 @@ doxygen Doxyfile
 ```
 
 ## Links
+
+https://docs.google.com/spreadsheets/d/13U8-sXTIre1m_5L26LODDyiWqxcg9dg30RVNmKRkZ0Y/edit#gid=636711951
 
 
 

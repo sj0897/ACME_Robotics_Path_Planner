@@ -4,6 +4,9 @@ add_executable(
     cpp-test
     main.cpp
     test.cpp
+    ../app/arm.cpp
+    ../app/path_planner.cpp
+
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
