@@ -1,0 +1,5 @@
+dof: 2
+link_length: [3, 3]
+trajectory: 
+  - [[2.6, 1.5], [4.1, 4.1]] 
+
