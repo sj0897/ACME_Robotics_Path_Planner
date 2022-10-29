@@ -34,9 +34,9 @@ class PathPlanner {
       start_state_{start},
       goal_state_{goal} {};
 
-    ~PathPlanner(){
+    ~PathPlanner() {
       arm_ptr_.release();
-    };
+    }
 
     /**
      * @Brief  Check if the joints state is within obstacles
