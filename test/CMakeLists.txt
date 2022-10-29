@@ -5,6 +5,7 @@ add_executable(
     main.cpp
     test.cpp
     ../app/arm.cpp
+    ../app/path_planner.cpp
 
 )
 
