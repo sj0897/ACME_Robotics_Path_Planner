@@ -45,3 +45,13 @@ TEST(plan, test_case_1) {
 
   EXPECT_EQ(result, plan);
 }
+
+TEST(is_obstacle, test_case_1) {
+  std::vector<double> links = {1, 1};
+  Arm2D trial(2, links);
+  std::vector<double> start = {0, 0};
+  std::vector<double> goal = {1.57, 0};
+  PathPlanner testPlanner(&trial, start, goal);
+  EXPECT_EQ(testPlanner.is_obstacle(links), false);
+
+}
