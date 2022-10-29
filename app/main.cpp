@@ -1,10 +1,8 @@
 #include <iostream>
-//#include <lib.hpp>
-#include <utils.hpp>
+#include <lib.hpp>
 
 int main()
 {
-    //dummy();
-    utils::create_simple_YAML();
+    dummy();
     return 0;
 }
