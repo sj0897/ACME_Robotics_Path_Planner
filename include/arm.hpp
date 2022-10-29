@@ -38,7 +38,7 @@ class Arm {
     /**
      * @Brief  Destructor
      */
-    virtual ~Arm() {};
+    virtual ~Arm() {}
 
 
     /**
@@ -113,7 +113,7 @@ class Arm2D: public Arm {
     /**
      * @Brief  Destructor
      */
-    virtual ~Arm2D() {};
+    virtual ~Arm2D() {}
 
     /**
      * @Brief  Remove copy constructor
