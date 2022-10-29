@@ -9,6 +9,7 @@
 
 #pragma once
 #include <vector>
+#include<cmath>
 
 /**
  * @Brief  A vector of joint_states
@@ -37,7 +38,7 @@ class Arm {
     /**
      * @Brief  Destructor
      */
-    virtual ~Arm();
+    virtual ~Arm() {}
 
 
     /**
@@ -89,7 +90,7 @@ class Arm {
 /**
  * @Brief  A 2D planar arm class
  */
-class Arm2D: private Arm {
+class Arm2D: public Arm {
  public:
     /**
      * @Brief Constructor
@@ -112,7 +113,7 @@ class Arm2D: private Arm {
     /**
      * @Brief  Destructor
      */
-    virtual ~Arm2D();
+    virtual ~Arm2D() {}
 
     /**
      * @Brief  Remove copy constructor
