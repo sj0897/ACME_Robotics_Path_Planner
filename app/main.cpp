@@ -34,12 +34,7 @@ int main()
         all_joints_step.emplace_back(eef_step[0]);
         all_joints_step.emplace_back(eef_step[1]);
 
-        all_joints_pos.emplace_back(all_joints_step);
-
-
-
-
-
+        all_joints_pos.emplace_back(all_joints_step); // {{x1,y1,x2,y2}{x1,y1,x2,y2}{x1,y1,x2,y2}{x1,y1,x2,y2}}
     }
 
     
