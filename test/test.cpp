@@ -53,5 +53,4 @@ TEST(is_obstacle, test_case_1) {
   std::vector<double> goal = {1.57, 0};
   PathPlanner testPlanner(&trial, start, goal);
   EXPECT_EQ(testPlanner.is_obstacle(links), false);
-
 }
