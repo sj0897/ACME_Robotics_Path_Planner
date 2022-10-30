@@ -53,11 +53,9 @@ namespace utils {
     out << YAML::Value << YAML::Flow << link_length; 
 
     out << YAML::Key << "trajectory"; 
-    for (auto& pose : poses) {
-      out << YAML::Value << YAML::Flow << pose; 
-    }
+    out << YAML::Value << YAML::Flow << poses; 
 
-    ofstream fout("test.yaml");
+    ofstream fout("arm_traj.yaml");
     fout << out.c_str();
   }
 }

@@ -25,6 +25,7 @@ class ArmTrajectory():
             self.data = yaml.load(f, Loader=SafeLoader)
 
         self.init_pose = self.data["trajectory"][0]
+        self.trajectory = self.data["trajectory"]
         self.draw_arm(self.init_pose)
         self.traj_length = len(self.data["trajectory"])
 
@@ -36,6 +37,7 @@ class ArmTrajectory():
         # Draw joints and arm
         p1 = [0, 0]; 
         for joint_pose in pose:
+            print(joint_pose)
             joint = plt.Circle(joint_pose, 0.5, color='b')
             ax.add_patch(joint)
 
@@ -45,10 +47,15 @@ class ArmTrajectory():
             plt.plot(x, y, color='c')
             p1 = p2
 
+    def draw(self):
+        for arm_pose in self.trajectory:
+            self.draw_arm(arm_pose)
 
 def main():
-    file_path = './example_traj.yaml'
+    file_path = './arm_traj.yaml'
     arm_traj = ArmTrajectory(file_path)
+
+    arm_traj.draw()
 
     plt.savefig('example.png')
     plt.show()   
