@@ -52,14 +52,42 @@ https://www.youtube.com/watch?v=pWCyieuHHsQ
 https://youtu.be/x7Cnl6RYBdM
 </details>
 
+<details>
+<summary>Phase 2 (Q1 release)</summary>  
+Implemented the IK, FK, and planning class along with the visualization tool. 
+
+#### UML Diagram  
+<img width="627" alt="image" src="https://user-images.githubusercontent.com/28807825/196823499-77bd3877-373c-4830-aca9-364a7b79902c.png">
+
+#### Video
+</details>
 
 ## Build
-Not available yet
+```
+mkdir build && cd build
+cmake ..
+make -j
+```
+
 ## Run
-Not available yet
+```
+cd build/app
+./shell-app
+```
 
 ## Demo
-Not available yet
+Copy the generated trajectory config to script folder.  
+Then visualize the arm trajectory with the visualize_arm.py script. 
+```
+cd scripts
+cp ../build/app/arm_traj.yaml .
+python3 visualize_arm.py
+```
+### Results
+The blue dots are the joints and the light blue lines are the links.  
+The arm is moving from a state to another.  
+![example](https://user-images.githubusercontent.com/28807825/198857109-ea1e47ce-856e-4804-93dc-5e3d52243b65.png)
+
 
 ## Docs
 The development docs and doxygen docs are in the documents folder.
