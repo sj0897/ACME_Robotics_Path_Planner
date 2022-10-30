@@ -60,6 +60,9 @@ Implemented the IK, FK, and planning class along with the visualization tool.
 <img width="627" alt="image" src="https://user-images.githubusercontent.com/28807825/196823499-77bd3877-373c-4830-aca9-364a7b79902c.png">
 
 #### Video
+
+https://youtu.be/2jF5UPY9P6g
+
 </details>
 
 ## Build
