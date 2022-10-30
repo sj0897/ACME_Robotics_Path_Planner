@@ -61,7 +61,7 @@ Implemented the IK, FK, and planning class along with the visualization tool.
 
 #### Video
 
-https://youtu.be/2jF5UPY9P6g
+https://youtu.be/OI30vWzXK_A
 
 </details>
 
